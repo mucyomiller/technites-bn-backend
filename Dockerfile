@@ -10,8 +10,7 @@ COPY package*.json ./
 # Install all dependencies
 RUN npm install
 
-# Bundle app source
-COPY . .
+# removed source code from image
 
 # Map port to the Docker daemon
 EXPOSE 5000
